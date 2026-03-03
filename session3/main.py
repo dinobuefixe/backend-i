@@ -1,5 +1,6 @@
 from typer import Typer, echo, style, colors
 from datetime import datetime
+from dataclasses import dataclass, field
 
 @dataclass
 class Meeting:
@@ -19,12 +20,23 @@ def goodbye():
 
 
 @cli.command()
-def create_meeting(meeting: Meeting):
+def create_meeting(
+    title: str,
+    date: str,
+    owner: str
+):
+    
+    meeting= Meeting(
+        title=title,
+        date=date,
+        owner=owner
+    )
+
     echo(style(f"""
     =========================
-    {meeting.title}
+    {title}
     =========================           
-    created by {meeting.owner} on {meeting.date}
+    created by {owner} on {date}
     """,fg=colors.BRIGHT_CYAN, bold=True))
 
 
