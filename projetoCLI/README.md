@@ -1,0 +1,2 @@
+Im always confused and overwhelmed by the quantity of music and albums that I can hear, so I couldn't choose what to listen to and got stuck in the same music all the time
+So I made this little CLI app to help me choose what to listen to
