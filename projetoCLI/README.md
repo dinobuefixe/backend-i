@@ -23,3 +23,14 @@ So I built this little CLI app to break that cycle.
 This tool removes the burden of choice.  
 Instead of scrolling endlessly through your library, you get a single, clean suggestion — enough to get you listening again.
 
+## 📌 Dependencies
+- Typer
+- Uv
+
+## 💡How to use
+- Open Container with Uv (astral)
+- uv add typer
+- source .venv/bin/activate
+- python src/cli.py
+
+  Then it will open a small menu to choose what to do
